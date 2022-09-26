@@ -21,7 +21,7 @@ const hidden = ref(false);
 
 <style scoped>
 .top-wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .body-wrapper {
@@ -34,5 +34,4 @@ const hidden = ref(false);
   flex-direction: column;
   gap: 25px;
 }
-
 </style>

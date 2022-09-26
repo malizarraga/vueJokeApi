@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="button-wrapper">
@@ -11,7 +10,6 @@
 </template>
 
 <style scoped>
-
 .button-wrapper {
   display: flex;
   justify-content: center;
@@ -23,12 +21,15 @@
   align-items: center;
   cursor: pointer;
   box-shadow: 5px 5px 5px gray;
-}
-
-.get-joke:hover {
   background-color: darkblue;
   border-color: darkblue;
   color: white;
+}
+
+.get-joke:hover {
+  background-color: white;
+  border-color: darkblue;
+  color: darkblue;
 }
 
 .get-joke:active {
