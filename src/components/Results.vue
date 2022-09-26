@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="results-container">
@@ -8,9 +7,9 @@
 </template>
 
 <style scoped>
-    .results-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.results-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
