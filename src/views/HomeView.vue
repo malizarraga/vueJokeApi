@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import JokeButton from "@/components/JokeButton.vue";
-import Results from "@/components/Results.vue";
+import JokeResults from "@/components/JokeResults.vue";
 import { ref } from "vue";
 
 const hidden = ref(false);
@@ -13,7 +13,7 @@ const hidden = ref(false);
         <JokeButton />
       </div>
       <div v-if="hidden" class="results-wrapper">
-        <Results />
+        <JokeResults />
       </div>
     </div>
   </main>
