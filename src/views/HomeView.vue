@@ -2,18 +2,30 @@
 import JokeButton from "@/components/JokeButton.vue";
 import JokeResults from "@/components/JokeResults.vue";
 import { ref } from "vue";
+import axios from "axios";
+
+const jokes = ref([]);
+const jokesRequest = async () => {
+  jokes.value = await axios
+    .get("https://v2.jokeapi.dev/joke/Any?safe-mode&amount=5&type=twopart")
+    .then((res) => res.data.jokes);
+};
 
 const hidden = ref(false);
+function changeVisibility() {
+  hidden.value = true;
+  jokesRequest();
+}
 </script>
 
 <template>
   <main class="container">
     <div class="body-wrapper">
       <div class="top-wrapper">
-        <JokeButton />
+        <JokeButton @button-click="changeVisibility" />
       </div>
       <div v-if="hidden" class="results-wrapper">
-        <JokeResults />
+        <JokeResults :jokes="jokes" />
       </div>
     </div>
   </main>
