@@ -33,11 +33,11 @@ function buttonClick() {
   box-shadow: 4px 4px 4px 3px gray;
   background-color: white;
   border-color: transparent;
-  color: #08233a;
+  color: var(--app-blue);
 }
 
 .get-joke:hover {
-  background-color: #08233a;
+  background-color: var(--app-blue);
   color: white;
 }
 
@@ -63,7 +63,7 @@ function buttonClick() {
 
 .get-joke span.joke-text--plus {
   flex: 0 0 50%;
-  color: #41d8c4;
+  color: var(--app-cyan);
   border-color: gray;
   font-size: 38px;
   line-height: 38px;

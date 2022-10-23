@@ -52,8 +52,8 @@ defineProps({
 
 .joke .index .index-box {
   padding: 10px;
-  background-color: #08233a;
-  color: #41d8c4;
+  background-color: var(--app-blue);
+  color: var(--app-cyan);
   border-radius: 8px;
   line-height: 1;
 }
